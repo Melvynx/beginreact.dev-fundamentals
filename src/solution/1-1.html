@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head}}
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script>
+    const div = document.createElement("div");
+    div.innerText = "Hello My Friend";
+
+    const root = document.querySelector("#root");
+    root.appendChild(div);
+  </script>
+
+  <script src="/core/core.js"></script>
+</html>

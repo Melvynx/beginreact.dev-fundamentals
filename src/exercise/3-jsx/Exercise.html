@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head}}
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <!-- 💡 permet de faire comprendre a Babel qu'il doit compilé ce fichier -->
+  <script type="text/babel">
+    // 🦁 Remplace tout ceci par du JSX !
+    // 💡 <button id=...
+    const button = React.createElement("button", { id: "start" }, "Start");
+
+    // 🦁 Remplace tout ceci par du JSX !
+    // 💡 <div><Counter />...
+    const element = React.createElement("div", null, button);
+
+    const root = ReactDOM.createRoot(document.querySelector("#root"));
+    root.render(element);
+  </script>
+
+  <script src="/core/core.js"></script>
+</html>

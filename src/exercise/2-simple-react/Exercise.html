@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head}}
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script>
+    // Crée un button avec comme id "start" et comme text à l'intérieur "Go !"
+
+    // Crée une div : "elements" avec à l'intérieur le bouton.
+
+    const container = document.querySelector("#root");
+    const root = undefined; // 🦁 Replace `undefined` by `ReactDOM.createRoot(container);`
+    // 🦁 Utilise `root.render` pour affiché la div "elements"
+  </script>
+
+  <script src="/core/core.js"></script>
+</html>

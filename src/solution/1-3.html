@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head}}
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script>
+    const div = document.createElement("div");
+    div.innerText = "Hello 👋";
+
+    const onClick = () => {
+      const child = document.createElement("div");
+      child.innerText = "❤️";
+      root.appendChild(child);
+    };
+
+    div.addEventListener("click", onClick);
+
+    const Counter = () => {
+      const button = document.createElement("button");
+      button.innerText = "0";
+      button.addEventListener("click", () => {
+        const number = Number(button.innerText);
+        button.innerText = String(number + 1);
+      });
+      return button;
+    };
+
+    const root = document.querySelector("#root");
+    root.appendChild(div);
+    root.appendChild(Counter());
+    root.appendChild(Counter());
+  </script>
+
+  <script src="/core/core.js"></script>
+</html>

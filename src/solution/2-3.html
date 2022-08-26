@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head}}
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script>
+    const fruits = ["pomme", "poire", "fraise", "cerise"];
+
+    const fruitsItems = fruits.map((fruit) => {
+      return React.createElement("li", null, fruit);
+    });
+
+    const fruitsList = React.createElement("ul", null, fruitsItems);
+
+    const button = React.createElement("button", { id: "start" }, "Start");
+
+    const element = React.createElement(
+      "div",
+      null,
+      React.createElement("h1", null, "Lance la partie !"),
+      React.createElement(
+        "div",
+        null,
+        button,
+        React.createElement("button", null, "Stop")
+      ),
+      fruitsList
+    );
+
+    const container = document.querySelector("#root");
+    const root = ReactDOM.createRoot(container);
+    root.render(element);
+  </script>
+
+  <script src="/core/core.js"></script>
+</html>
