@@ -1,6 +1,6 @@
 # Ajout du JSX
 
-C'est l'heure de faire du vrai React ! On va ajouté le JSX dans le fichier HTML.
+C'est l'heure de faire du vrai React ! On va ajouter le JSX dans le fichier HTML.
 
 Le JSX est juste un moyen plus "lisible" d'écrire du React. Il ressemble
 a du HTML, mais il sera compilé par React.
@@ -13,14 +13,14 @@ const element = <div id="test">Hey</div>;
 const element = ReactDOM.createElement('div', { id: 'test' }, 'Hey');
 ```
 
-## Exercise 1
+## Exercice 1
 
-Donc on va refaire ce qu'on a fait dans l'exercise 1.1 mais avec JSX.
-Les indications sont dans le fichier de l'exercise. Ecoute 
+Donc on va refaire ce qu'on a fait dans l'exercice 1.1 mais avec JSX.
+Les indications sont dans le fichier de l'exercice. Ecoute 
 
-## Exercise 2
+## Exercice 2
 
-Maintenant on va crée un composant.
+Maintenant on va créer un composant.
 
 Pour ça il suffit de créer une fonction qui retourne un élément JSX.
 
@@ -30,11 +30,11 @@ const Composant = () => {
 };
 ```
 
-Tu peux crée un composant "Message" qui affiche "I'm a message" dans un `p`.
+Tu peux créer un composant "Message" qui affiche "I'm a message" dans un `p`.
 
-Et ajouter ce composants dans `elements`.
+Et ajouter ce composant dans `elements`.
 
-## Exercise 3
+## Exercice 3
 
 Et si on veut customiser le composant, comment on fait ?
 
@@ -45,24 +45,24 @@ comme ceci :
 <Message>Mon message ici</Message>
 ```
 
-Pour ceci, je te laisse allé lire [cette documentation](https://fr.reactjs.org/docs/glossary.html#propschildren).
+Pour ceci, je te laisse aller lire [cette documentation](https://fr.reactjs.org/docs/glossary.html#propschildren).
 
-## Exercise 4
+## Exercice 4
 
 Ajout d'un auteur.
 
 Maintenant notre message doit afficher : "{author} : {message}"
 
-Donc il faut rajouté une nouvelle props.
+Donc il faut rajouter une nouvelle props.
 
-Pour les props, tu peux allé voir la documentation [react sur les props](https://fr.reactjs.org/docs/glossary.html#propschildren).
+Pour les props, tu peux aller voir la documentation [react sur les props](https://fr.reactjs.org/docs/glossary.html#propschildren).
 
-Tu peux rajouté dans éléments la props "author" et ajouté un nouveau message pour répondre aux premier message.
+Tu peux rajouter dans éléments la props "author" et ajouter un nouveau message pour répondre au premier message.
 
-## Exercise 5 (pas de code)
+## Exercice 5 (pas de code)
 
-Maintenant, utilise le [compiler babel](https://babeljs.io/repl/) pour récupéré
-le code sans JSX de l'exercise précédent.
+Maintenant, utilise le [compiler babel](https://babeljs.io/repl/) pour récupérer
+le code sans JSX de l'exercice précédent.
 
-Le code que tu récupère ici **c'est celui que ton navigateur comprend**. Le JSX est
+Le code que tu récupères ici **c'est celui que ton navigateur comprend**. Le JSX est
 incompréhensible pour lui.

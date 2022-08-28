@@ -2,7 +2,7 @@
 
 En partant sur un fichier HTML comme précédemment, on va ajouter React.
 
-Dans le fichier de l'exercise, j'ai déjà ajouté les deux Scripts qui 
+Dans le fichier de l'exercice, j'ai déjà ajouté les deux Scripts qui 
 te permettent de faire du React.
 
 ⚠️Il n'y a pas de JSX. Pour que tu puisses totalement comprendre
@@ -11,15 +11,15 @@ le JSX on va faire sans, et tu vas découvrir le bonheur quand tu seras avec.
 ⚠️On utilise des CDN, donc on télécharge tout React dans notre projet. C'est
 normal si c'est un peu lent surtout si tu n'as pas beaucoup de connexion.
 
-## Exercise 1
+## Exercice 1
 
-Le but est de refaire ce qu'on a fait dans "1-pas-de-react" dans l'exercise 1, mais en React.
+Le but est de refaire ce qu'on a fait dans "1-pas-de-react" dans l'exercice 1, mais en React.
 
 Pour ça il va falloir utiliser [react-dom](https://reactjs.org/docs/react-dom-client.html#createroot). 
 Clique sur le lien pour comprendre comment il fonctionne. J'en parle dans la vidéo Solution 1 si tu ne comprends pas tout.
 
-ReactDOM comme on la vue sur la vidéo d'intro "C'est quoi le DOM Virtuel ?" permet d'optimiser
-le rendu afin d'avoir une page web plus rapide qui met à jour uniquement les éléments souhaité.
+ReactDOM comme on l'a vu sur la vidéo d'intro "C'est quoi le DOM Virtuel ?" permet d'optimiser
+le rendu afin d'avoir une page web plus rapide qui met à jour uniquement les éléments souhaités.
 
 Ensuite, il va falloir créer un élément React. Avant en JS on faisait 
 `document.createElement('div')` en React on fait `React.createElement('div', props, ...children)`.
@@ -34,7 +34,7 @@ Les props sont l'équivalent des propriétés de l'HTML et le children c'est ce 
 React.createElement('div', {id: 'test'}, "Hey")
 ```
 
-Tu peux aller voir cette documentation pour réaliser l'exercise. [createElement](https://reactjs.org/docs/react-api.html#createelement)
+Tu peux aller voir cette documentation pour réaliser l'exercice. [createElement](https://reactjs.org/docs/react-api.html#createelement)
 
 Voici un exemple de ReactDOM :
 
@@ -51,14 +51,14 @@ root.render(element);
 
 💌 Tu comprends comment fonctionne l'API de React **sans le JSX**.
 
-## Exercise 2
+## Exercice 2
 
-Tu as le bouton Start. Maintenant on aimerait ajouter des informations autours.
+Tu as le bouton Start. Maintenant on aimerait ajouter des informations autour.
 
 Reproduis cet HTML en utilisant React.
 
 ```html
-<!-- c'est `element` de l'exercise 1 -->
+<!-- c'est `element` de l'exercice 1 -->
 <div>
   <h1>Lance la partie !</h1>
   <div>
@@ -72,11 +72,11 @@ Reproduis cet HTML en utilisant React.
 
 💌 Tu apprends à réaliser un markup HTML en utilisant ReactDOM.
 
-## Exercise 3
+## Exercice 3
 
 Les listes en React sont incontournables.
 
-J'ai envie d'affiché un élément en fonction d'un tableau `fruits` :
+J'ai envie d'afficher un élément en fonction d'un tableau `fruits` :
 
 ```js
 const fruits = ['pomme', 'poire', 'fraise', 'cerise'];
@@ -103,9 +103,9 @@ Pour comprendre les `children` voici un exemple :
 
 ```html
 <div>
-  <p>I'm an children</p>
-  <span>I'm an children</span>
-  <button>I'm an children</button>
+  <p>I'm a children</p>
+  <span>I'm a children</span>
+  <button>I'm a children</button>
 </div>
 ```
 
@@ -136,7 +136,7 @@ ReactDOM.createElement("div", null, childrens);
 
 **N'oublie jamais ça** !
 
-Donc pour réaliser cette exercise il te faut prendre le tableau `fruits` et
+Donc pour réaliser cet exercice il te faut prendre le tableau `fruits` et
 le transformer en children en utilisant `.map`.
 
 💡Tips
@@ -149,7 +149,7 @@ const childrens = fruits.map(fruit => {
 
 Puis `append` ce tableau dans un élément `ul` !
 
-💥 Dans le prochain module, on verra plus en détails les listes avec JSX.
+💥 Dans le prochain module, on verra plus en détail les listes avec JSX.
 
 💌 Tu comprends comment fonctionne les listes en React afin d'être
 prêt pour utiliser du JSX.
