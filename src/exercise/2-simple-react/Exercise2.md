@@ -51,7 +51,7 @@ root.render(element);
 
 💌 Tu comprends comment fonctionne l'API de React **sans le JSX**.
 
-## Exercice 2
+## Exercice 2 - Création de markup
 
 Tu as le bouton Start. Maintenant on aimerait ajouter des informations autour.
 
@@ -72,7 +72,7 @@ Reproduis cet HTML en utilisant React.
 
 💌 Tu apprends à réaliser un markup HTML en utilisant ReactDOM.
 
-## Exercice 3
+## Exercice 3 - Listes
 
 Les listes en React sont incontournables.
 

@@ -21,7 +21,7 @@
     const Message = ({ children, author }) => {
       return (
         <p>
-          {author} : {children}
+          <b>{author}</b> : {children}
         </p>
       );
     };
@@ -35,7 +35,7 @@
       </div>
     );
 
-    const root = ReactDOM.createRoot(document.querySelector("#root"));
+    const root = ReactDOM.createRoot(document.querySelector('#root'));
     root.render(element);
   </script>
 

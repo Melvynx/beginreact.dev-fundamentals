@@ -6,10 +6,11 @@ On va commencer en faisant du React... sans React...
 Puis, dans l'exercice 2, on va modifier ce code AVEC React sans JSX.
 
 Oui, on va faire du simple JavaScript avec la gestion du DOM.
+
 1. Pour te rafraîchir la mémoire
 2. Pour mieux comprendre React par la suite !
 
-## Exercice
+## Exercice 1
 
 Le but est tout simplement d'afficher une div sur la page, juste avec du JavaScript.
 
@@ -17,7 +18,7 @@ Le but est tout simplement d'afficher une div sur la page, juste avec du JavaScr
 
 💌 Tu apprends à afficher un élément en utilisant JavaScript uniquement.
 
-## Exercice 2
+## Exercice 2 - Interaction avec des events
 
 Quand tu cliques sur notre div "Hello", ajoute un cœur sur la page.
 
@@ -25,12 +26,12 @@ Regarde-le résultat de la solution 2 (pas le code, mais le rendu) et essaie de 
 
 💌 Tu apprends à gérer un événement sans React.
 
-## Exercice 3
+## Exercice 3 - Composants sans React
 
-Maintenant, crée un composant "Counter" qui affiche un bouton. Quand tu cliques sur le bouton, 
+Maintenant, crée un composant "Counter" qui affiche un bouton. Quand tu cliques sur le bouton,
 le compteur doit s'incrémenter d'un.
 
-Tu pourras ajouter ce composant à la div "root". Il faut savoir que ce composant doit être une fonction, 
+Tu pourras ajouter ce composant à la div "root". Il faut savoir que ce composant doit être une fonction,
 qui peut être appelée plusieurs fois si besoin.
 
 Voici le début du code pour t'aider :
@@ -45,7 +46,7 @@ const Counter = () => {
 };
 ```
 
-Ajoute deux counter à ta page pour vérifier que ton "composant" fonctionne 
+Ajoute deux counter à ta page pour vérifier que ton "composant" fonctionne
 même plusieurs fois.
 
 Regarde-le résultat de la solution 3 et essaie de cliquer sur la div.

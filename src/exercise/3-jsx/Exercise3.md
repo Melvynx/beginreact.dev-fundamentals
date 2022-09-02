@@ -16,9 +16,11 @@ const element = ReactDOM.createElement('div', { id: 'test' }, 'Hey');
 ## Exercice 1
 
 Donc on va refaire ce qu'on a fait dans l'exercice 1.1 mais avec JSX.
-Les indications sont dans le fichier de l'exercice. Ecoute 
+Les indications sont dans le fichier de l'exercice.
 
-## Exercice 2
+💌 Tu apprends à utiliser le JSX.
+
+## Exercice 2 - Création de composant avec JSX
 
 Maintenant on va créer un composant.
 
@@ -34,7 +36,9 @@ Tu peux créer un composant "Message" qui affiche "I'm a message" dans un `p`.
 
 Et ajouter ce composant dans `elements`.
 
-## Exercice 3
+💌 Tu apprends l'usage des composants avec les fonctions.
+
+## Exercice 3 - Utilisation de la props children
 
 Et si on veut customiser le composant, comment on fait ?
 
@@ -47,7 +51,9 @@ comme ceci :
 
 Pour ceci, je te laisse aller lire [cette documentation](https://fr.reactjs.org/docs/glossary.html#propschildren).
 
-## Exercice 4
+💌 Tu apprends l'utilisation du children.
+
+## Exercice 4 - Ajout de props
 
 Ajout d'un auteur.
 
@@ -59,10 +65,17 @@ Pour les props, tu peux aller voir la documentation [react sur les props](https:
 
 Tu peux rajouter dans éléments la props "author" et ajouter un nouveau message pour répondre au premier message.
 
-## Exercice 5 (pas de code)
+💌 Tu apprends l'utilisation des props.
+
+## Exercice 5 - Compiler babel
 
 Maintenant, utilise le [compiler babel](https://babeljs.io/repl/) pour récupérer
 le code sans JSX de l'exercice précédent.
 
+Tu peux copier coller ton code à l'intérieur.
+
 Le code que tu récupères ici **c'est celui que ton navigateur comprend**. Le JSX est
-incompréhensible pour lui.
+incompréhensible pour lui. Lorsque que tu save le fichier, ton navigateur vas
+transformé le code JSX en code JS avec `React.createElement.`
+
+💌 Tu comprends le fonctionnement de JSX avec Babel.

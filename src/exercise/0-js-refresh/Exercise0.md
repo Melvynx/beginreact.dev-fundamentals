@@ -9,4 +9,5 @@ Mais que ce soit pour React ou TypeScript il faut savoir faire du JavaScript.
 Dans ces petits exercises, on va navigué dans les bases du JavaScript pour faire du
 React correctement.
 
-## Exericse 1
+Pour ce faire tu peux aller sur mon article interactif de blog et
+suivre pas à pas avec la vidéo.
