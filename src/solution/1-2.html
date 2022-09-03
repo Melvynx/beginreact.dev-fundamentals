@@ -8,17 +8,17 @@
   </body>
 
   <script>
-    const div = document.createElement("div");
-    div.innerText = "Hello 👋";
+    const helloDiv = document.createElement("div");
+    helloDiv.innerText = "Hello 👋";
 
     const onClick = () => {
       alert("Tu as cliqué sur Hello !");
     };
 
-    div.addEventListener("click", onClick);
+    helloDiv.addEventListener("click", onClick);
 
     const root = document.querySelector("#root");
-    root.appendChild(div);
+    root.appendChild(helloDiv);
   </script>
 
   <script src="/core/core.js"></script>
