@@ -20,7 +20,8 @@ Le but est tout simplement d'afficher une div sur la page, juste avec du JavaScr
 
 ## Exercice 2 - Interaction avec des events
 
-Quand tu cliques sur notre div "Hello", ajoute un cœur sur la page.
+Quand tu cliques sur notre div "Hello", il t'affiche une `alert`
+avec `Tu as cliqué sur Hello !` !
 
 Regarde-le résultat de la solution 2 (pas le code, mais le rendu) et essaie de cliquer sur la div.
 
@@ -38,8 +39,8 @@ Voici le début du code pour t'aider :
 
 ```js
 const Counter = () => {
-  const button = ''; // remplace "" par la création d'un bouton
-  button.addEventListener('click', () => {
+  const button = ""; // remplace "" par la création d'un bouton
+  button.addEventListener("click", () => {
     /* increment counter */
   });
   return button;
@@ -52,3 +53,14 @@ même plusieurs fois.
 Regarde-le résultat de la solution 3 et essaie de cliquer sur la div.
 
 💌 Tu apprends à faire des composants sans React !
+
+## Exercise 4 - Afficher une liste
+
+Voici un tableau de fruits :
+
+```js
+const fruits = ["banana", "apple", "strawberry"];
+```
+
+Sous nous boutons, ajoute une liste (`ul`) avec chaqun de
+nos fruits (`li`) !

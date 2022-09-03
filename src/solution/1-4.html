@@ -29,10 +29,19 @@
       return button;
     };
 
+    const fruitsListUl = document.createElement("ul");
+    const fruits = ["banana", "apple", "strawberry", "test"];
+    for (const fruit of fruits) {
+      const fruitLi = document.createElement("li");
+      fruitLi.innerText = fruit;
+      fruitsListUl.appendChild(fruitLi);
+    }
+
     const root = document.querySelector("#root");
     root.appendChild(helloDiv);
     root.appendChild(Counter());
     root.appendChild(Counter());
+    root.appendChild(fruitsListUl);
   </script>
 
   <script src="/core/core.js"></script>
