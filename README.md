@@ -60,7 +60,3 @@ Donc fais attention à ne pas l'enlever !
   qui te donne directement une partie de la réponse
 - 💌 Elle t'informe pour chaque exercise ce que tu as appris. Ce n'est pas que dans
   l'exercise que tu apprends mais aussi dans la vidéo correction associé.
-
-## Conclusion
-
-Happy exercise et on se retrouve pour la fin du premier module.
