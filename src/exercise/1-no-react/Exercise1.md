@@ -25,6 +25,8 @@ avec `Tu as cliqué sur Hello !` !
 
 Regarde-le résultat de la solution 2 (pas le code, mais le rendu) et essaie de cliquer sur la div.
 
+[📖 addEventListener](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener)
+
 💌 Tu apprends à gérer un événement sans React.
 
 ## Exercice 3 - Composants sans React
@@ -38,14 +40,15 @@ qui peut être appelée plusieurs fois si besoin.
 Voici le début du code pour t'aider :
 
 ```js
-const Counter = () => {
-  const button = ""; // remplace "" par la création d'un bouton
-  button.addEventListener("click", () => {
-    /* increment counter */
-  });
+const Counter = (initialValue) => {
+  const button = ""; // 🦁remplace "" par la création d'un bouton
+  // 🦁 Ajout du text
+  // 🦁 Ajout de l'event
   return button;
 };
 ```
+
+⚠️ Il faut ajouter une valeur par défaut pour notre button (`initialValue`).
 
 Ajoute deux counter à ta page pour vérifier que ton "composant" fonctionne
 même plusieurs fois.
@@ -54,7 +57,7 @@ Regarde-le résultat de la solution 3 et essaie de cliquer sur la div.
 
 💌 Tu apprends à faire des composants sans React !
 
-## Exercise 4 - Afficher une liste
+## Exercise 4 - Afficher une liste
 
 Voici un tableau de fruits :
 

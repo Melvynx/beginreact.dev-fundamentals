@@ -9,31 +9,33 @@
 
   <script>
     const helloDiv = document.createElement("div");
+
     helloDiv.innerText = "Hello 👋";
 
-    const onClick = () => {
-      const child = document.createElement("div");
-      child.innerText = "❤️";
-      root.appendChild(child);
+    const helloDivOnClick = () => {
+      alert("Tu as cliqué sur Hello !");
     };
 
-    helloDiv.addEventListener("click", onClick);
+    helloDiv.addEventListener("click", helloDivOnClick);
 
-    const Counter = () => {
+    const Counter = (initialValue) => {
       const button = document.createElement("button");
-      button.innerText = "0";
-      button.addEventListener("click", () => {
-        const number = Number(button.innerText);
-        button.innerText = number + 1;
-      });
+      button.innerText = Number(initialValue) || 0;
+
+      const onClick = () => {
+        const previousValue = Number(button.innerText);
+        button.innerText = previousValue + 1;
+      };
+
+      button.addEventListener("click", onClick);
       return button;
     };
 
     const root = document.querySelector("#root");
+
     root.appendChild(helloDiv);
     root.appendChild(Counter());
-    root.appendChild(Counter());
+    root.appendChild(Counter("some string"));
+    root.appendChild(Counter(10));
   </script>
-
-  <script src="/core/core.js"></script>
 </html>
