@@ -5,7 +5,7 @@ En partant sur un fichier HTML comme précédemment, on va ajouter React.
 Dans le fichier de l'exercice, j'ai déjà ajouté les deux Scripts qui
 te permettent de faire du React.
 
-Pour ça il va falloir utiliser [react-dom](https://reactjs.org/docs/react-dom-client.html#createroot).
+Pour ça il va falloir utiliser [📖 react-dom](https://reactjs.org/docs/react-dom-client.html#createroot).
 Clique sur le lien pour comprendre comment il fonctionne. J'en parle dans la vidéo Solution 1 si tu ne comprends pas tout.
 
 ReactDOM comme on l'a vu sur la vidéo d'intro "C'est quoi le DOM Virtuel ?" permet d'optimiser
@@ -36,7 +36,9 @@ besoin d'une connexion internet pour faire cette exercise.
 On vas simplement crée un bouton "Start" qui lors du click affiche une `alert`
 avec le text "Le bouton start à été cliqué !".
 
-Tu peux aller voir cette documentation pour réaliser l'exercice. [createElement](https://reactjs.org/docs/react-api.html#createelement)
+[📖 Ajout d'event avec React](https://reactjs.org/docs/handling-events.html)
+
+Tu peux aller voir cette documentation pour réaliser l'exercice. [📖 createElement](https://reactjs.org/docs/react-api.html#createelement)
 
 Voici un exemple de React CreateElement :
 
@@ -48,7 +50,7 @@ const children = "Hey";
 const element = React.createElement(elementType, props, children);
 ```
 
-Ensuite il faut utiliser [ReactDOM - createRoot](https://reactjs.org/docs/react-dom-client.html#createroot)
+Ensuite il faut utiliser [📖 ReactDOM - createRoot](https://reactjs.org/docs/react-dom-client.html#createroot)
 pour afficher notre élément
 
 💌 Tu comprends comment fonctionne l'API de React **sans le JSX**.
