@@ -10,7 +10,7 @@ const element = <div id="test">Hey</div>;
 
 // compilé par React
 
-const element = ReactDOM.createElement('div', { id: 'test' }, 'Hey');
+const element = React.createElement("div", { id: "test" }, "Hey");
 ```
 
 ## Exercice 1
@@ -32,9 +32,17 @@ const Composant = () => {
 };
 ```
 
-Tu peux créer un composant "Message" qui affiche "I'm a message" dans un `p`.
+Tu peux créer un composant `Message` qui affiche "I'm a message" dans un `p`.
 
 Et ajouter ce composant dans `elements`.
+
+Un composasnt (une function) s'utilise comme une `div` ou tout autre élément :
+
+```jsx
+<div></div>
+
+<Composant></Composant>
+```
 
 💌 Tu apprends l'usage des composants avec les fonctions.
 
@@ -49,7 +57,7 @@ comme ceci :
 <Message>Mon message ici</Message>
 ```
 
-Pour ceci, je te laisse aller lire [cette documentation](https://fr.reactjs.org/docs/glossary.html#propschildren).
+Pour ceci, je te laisse aller lire [📖 cette documentation](https://fr.reactjs.org/docs/glossary.html#propschildren).
 
 💌 Tu apprends l'utilisation du children.
 
@@ -59,9 +67,15 @@ Ajout d'un auteur.
 
 Maintenant notre message doit afficher : "{author} : {message}"
 
+Pour pouvoir l'utiliser comme ça :
+
+```jsx
+<Message author="Melvynx">Hello</Message>
+```
+
 Donc il faut rajouter une nouvelle props.
 
-Pour les props, tu peux aller voir la documentation [react sur les props](https://fr.reactjs.org/docs/glossary.html#propschildren).
+Pour les props, tu peux aller voir la documentation [📖 react sur les props](https://fr.reactjs.org/docs/glossary.html#propschildren).
 
 Tu peux rajouter dans éléments la props "author" et ajouter un nouveau message pour répondre au premier message.
 

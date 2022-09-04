@@ -41,7 +41,7 @@ Voici le début du code pour t'aider :
 
 ```js
 const Counter = (initialValue) => {
-  const button = ""; // 🦁remplace "" par la création d'un bouton
+  const button = ""; // 🦁 remplace "" par la création d'un bouton
   // 🦁 Ajout du text
   // 🦁 Ajout de l'event
   return button;
