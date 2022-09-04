@@ -13,6 +13,8 @@ const element = <div id="test">Hey</div>;
 const element = React.createElement("div", { id: "test" }, "Hey");
 ```
 
+⚠️ J'ai ajouté un nouveau script "Babel" et j'ai changé le type du fichier.
+
 ## Exercice 1
 
 Donc on va refaire ce qu'on a fait dans l'exercice 1.1 mais avec JSX.

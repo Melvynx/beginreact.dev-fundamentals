@@ -19,11 +19,20 @@
   </body>
 
   <script type="text/babel">
-    const button = <button id="start">Start</button>;
+    const startButton = (
+      <button
+        id="start"
+        onClick={() => {
+          alert("Le bouton start à été cliqué !");
+        }}
+      >
+        Start
+      </button>
+    );
 
-    const elements = <div>{button}</div>;
+    const elements = <div>{startButton}</div>;
 
     const root = ReactDOM.createRoot(document.querySelector("#root"));
-    root.render(element);
+    root.render(elements);
   </script>
 </html>

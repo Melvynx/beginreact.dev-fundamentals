@@ -17,18 +17,20 @@
   </body>
 
   <script>
-    const button = React.createElement("button", { id: "start" }, "Start");
+    const startButton = React.createElement("button", { id: "start" }, "Start");
+
+    const buttonContainer = React.createElement(
+      "div",
+      null,
+      startButton,
+      React.createElement("button", null, "Stop")
+    );
 
     const element = React.createElement(
       "div",
       null,
       React.createElement("h1"),
-      React.createElement(
-        "div",
-        null,
-        button,
-        React.createElement("button", null, "Stop")
-      )
+      buttonContainer
     );
 
     const container = document.querySelector("#root");

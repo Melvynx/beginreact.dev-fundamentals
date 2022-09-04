@@ -25,18 +25,20 @@
 
     const fruitsList = React.createElement("ul", null, fruitsItems);
 
-    const button = React.createElement("button", { id: "start" }, "Start");
+    const startButton = React.createElement("button", { id: "start" }, "Start");
+
+    const buttonContainer = React.createElement(
+      "div",
+      null,
+      startButton,
+      React.createElement("button", null, "Stop")
+    );
 
     const element = React.createElement(
       "div",
       null,
-      React.createElement("h1", null, "Lance la partie !"),
-      React.createElement(
-        "div",
-        null,
-        button,
-        React.createElement("button", null, "Stop")
-      ),
+      React.createElement("h1"),
+      buttonContainer,
       fruitsList
     );
 

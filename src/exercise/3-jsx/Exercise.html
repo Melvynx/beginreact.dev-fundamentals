@@ -22,11 +22,20 @@
   <script type="text/babel">
     // 🦁 Remplace tout ceci par du JSX !
     // 💡 <button id=...
-    const button = React.createElement("button", { id: "start" }, "Start");
+    const startButton = React.createElement(
+      "button",
+      {
+        id: "start",
+        onClick: () => {
+          alert("Le bouton start à été cliqué !");
+        },
+      },
+      "Start"
+    );
 
     // 🦁 Remplace tout ceci par du JSX !
     // 💡 <div><Counter />...
-    const element = React.createElement("div", null, button);
+    const element = React.createElement("div", null, startButton);
 
     const root = ReactDOM.createRoot(document.querySelector("#root"));
     root.render(element);

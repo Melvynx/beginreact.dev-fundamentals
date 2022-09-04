@@ -23,7 +23,7 @@
       return /*#__PURE__*/ React.createElement(
         "p",
         null,
-        author,
+        /*#__PURE__*/ React.createElement("b", null, author),
         " : ",
         children
       );
@@ -46,10 +46,16 @@
           author: "Bill",
         },
         "Hello"
+      ),
+      /*#__PURE__*/ React.createElement(
+        Message,
+        {
+          author: "Melvynx",
+        },
+        "Coucou !"
       )
     );
-
     const root = ReactDOM.createRoot(document.querySelector("#root"));
-    root.render(element);
+    root.render(elements);
   </script>
 </html>
