@@ -10,7 +10,7 @@ Oui, on va faire du simple JavaScript avec la gestion du DOM.
 1. Pour te rafraîchir la mémoire
 2. Pour mieux comprendre React par la suite !
 
-## Exercice 1
+## Exercice
 
 Le but est tout simplement d'afficher une div sur la page, juste avec du JavaScript.
 
@@ -18,7 +18,7 @@ Le but est tout simplement d'afficher une div sur la page, juste avec du JavaScr
 
 💌 Tu apprends à afficher un élément en utilisant JavaScript uniquement.
 
-## Exercice 2 - Interaction avec des events
+## Extra 2 - Interaction avec des events
 
 Quand tu cliques sur notre div "Hello", il t'affiche une `alert`
 avec `Tu as cliqué sur Hello !` !
@@ -29,7 +29,7 @@ Regarde-le résultat de la solution 2 (pas le code, mais le rendu) et essaie de 
 
 💌 Tu apprends à gérer un événement sans React.
 
-## Exercice 3 - Composants sans React
+## Extra 3 - Composants sans React
 
 Maintenant, crée un composant "Counter" qui affiche un bouton. Quand tu cliques sur le bouton,
 le compteur doit s'incrémenter d'un.
@@ -57,7 +57,7 @@ Regarde-le résultat de la solution 3 et essaie de cliquer sur la div.
 
 💌 Tu apprends à faire des composants sans React !
 
-## Exercise 4 - Afficher une liste
+## Extra 4 - Afficher une liste
 
 Voici un tableau de fruits :
 

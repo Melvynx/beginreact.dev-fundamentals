@@ -37,18 +37,21 @@ Dans le dossier [src/exercise](src/exercise) tu trouveras un dossier par exercic
 
 Dans chacun de ses exercises tu trouveras les fichiers suivants :
 
-- `Exercise`: Le fichier où tu vas faire l'exercise. Tu trouveras à l'intérieur des indications
-  de nos émojis pour réaliser le premier exercise.
-- `ExerciseN.md`: Le fichier de consigne. Si tu es sur VSCode je te conseille d'ouvrir le
-  fichier `md` et faire `CMD + SHIFT + P` puis chercher "Open Markdown" et sélectionner le
-  "Markdown : Open preview to the side" !
-  - Dans les fichiers Exercise il y a plusieurs exercise. Le premier exercise est l'exercise
-    principal, dans le fichier `Exercise.html` tu trouveras de l'aide pour le réalisé avec les émojis.
-  - Ensuite, il y a 1 à 6 autres exercises que tu vas réaliser seul.
+`Exercise`: Le fichier où tu vas faire l'exercise. À l'intérieur il y a des émojis pour t'aider.
+
+`ExerciseN.md`: Le fichier de consigne. Si tu es sur VSCode je te conseille d'ouvrir le
+fichier `md` et faire `CMD + SHIFT + P` puis chercher "Open Markdown" et sélectionner le
+"Markdown : Open preview to the side" !
+
+Dans les fichiers Exercise il y a plusieurs "Extra". Le premier exercise est l'exercise
+principal, dans le fichier `Exercise.html` tu trouveras de l'aide pour le réalisé avec les émojis.
+
+Ensuite, il y a 1 à 6 autres exercises que tu vas réaliser seul.
 
 ### Les Solutions
 
-Dans le dossier [src/solution](src/solution) il y a les fichiers solution pour chaque exercice et sous exercice.
+Dans le dossier [src/solution](src/solution) il y a les fichiers solution pour
+chaque exercice et sous exercice.
 
 Les solutions pour l'exercise `1` sont dans le fichier `solution` préfixé par `1` puis le numéro
 du sous exercise. Par exemple dans l'exercise `1` il y a 3 sous exercises donc :

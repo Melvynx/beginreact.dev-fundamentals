@@ -15,14 +15,14 @@ const element = React.createElement("div", { id: "test" }, "Hey");
 
 ⚠️ J'ai ajouté un nouveau script "Babel" et j'ai changé le type du fichier.
 
-## Exercice 1
+## Exercice
 
 Donc on va refaire ce qu'on a fait dans l'exercice 1.1 mais avec JSX.
 Les indications sont dans le fichier de l'exercice.
 
 💌 Tu apprends à utiliser le JSX.
 
-## Exercice 2 - Création de composant avec JSX
+## Extra 2 - Création de composant avec JSX
 
 Maintenant on va créer un composant.
 
@@ -48,7 +48,7 @@ Un composasnt (une function) s'utilise comme une `div` ou tout autre élément :
 
 💌 Tu apprends l'usage des composants avec les fonctions.
 
-## Exercice 3 - Utilisation de la props children
+## Extra 3 - Utilisation de la props children
 
 Et si on veut customiser le composant, comment on fait ?
 
@@ -63,7 +63,7 @@ Pour ceci, je te laisse aller lire [📖 cette documentation](https://fr.reactjs
 
 💌 Tu apprends l'utilisation du children.
 
-## Exercice 4 - Ajout de props
+## Extra 4 - Ajout de props
 
 Ajout d'un auteur.
 
@@ -83,7 +83,7 @@ Tu peux rajouter dans éléments la props "author" et ajouter un nouveau message
 
 💌 Tu apprends l'utilisation des props.
 
-## Exercice 5 - Compiler babel
+## Extra 5 - Compiler babel
 
 Maintenant, utilise le [compiler babel](https://babeljs.io/repl/) pour récupérer
 le code sans JSX de l'exercice précédent.

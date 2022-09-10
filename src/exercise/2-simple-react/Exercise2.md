@@ -31,7 +31,7 @@ le JSX on va faire sans, et tu vas découvrir le bonheur quand tu seras avec.
 normal si c'est un peu lent surtout si tu n'as pas beaucoup de connexion. Tu as
 besoin d'une connexion internet pour faire cette exercise.
 
-## Exercice 1
+## Exercice
 
 On vas simplement crée un bouton "Start" qui lors du click affiche une `alert`
 avec le text "Le bouton start à été cliqué !".
@@ -55,7 +55,7 @@ pour afficher notre élément
 
 💌 Tu comprends comment fonctionne l'API de React **sans le JSX**.
 
-## Exercice 2 - Création de markup
+## Extra 2 - Création de markup
 
 Tu as le bouton Start. Maintenant on aimerait ajouter des informations autour.
 
@@ -76,7 +76,7 @@ Reproduis cet HTML en utilisant React.
 
 💌 Tu apprends à réaliser un markup HTML en utilisant ReactDOM.
 
-## Exercice 3 - Listes
+## Extra 3 - Listes
 
 Les listes en React sont incontournables.
 
