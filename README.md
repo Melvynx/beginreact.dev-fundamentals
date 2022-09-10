@@ -14,6 +14,7 @@ sans React.
 - [git](https://git-scm.com/downloads) - v2 ou plus
 - [node](https://nodejs.org/en/) - v12 ou plus
 - [npm](https://nodejs.org/en/) - v6 ou plus
+- [vscode](https://code.visualstudio.com/) - (ou un autre IDE)
 
 ## Setup du projet
 
