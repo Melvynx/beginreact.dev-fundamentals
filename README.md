@@ -4,6 +4,31 @@ Pour appréhender correctement React, je vais te faire découvrir les fondamenta
 Il faut bien comprendre quel problème React résout. Dans ce module, on va faire du React
 sans React.
 
+## Pré-requis
+
+- [JavaScript à connaître pour commencer React](https://codelynx.dev/posts/javascript-known-to-start-react)
+- Installer le React DevTools ([chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/))
+
+## Systems
+
+- [git](https://git-scm.com/downloads) - v2 ou plus
+- [node](https://nodejs.org/en/) - v12 ou plus
+- [npm](https://nodejs.org/en/) - v6 ou plus
+
+## Setup du projet
+
+```bash
+git clone https://github.com/Melvynx/react-beginners-fundamentals.git
+cd react-beginners-fundamentals
+npm install
+```
+
+Pour lancer le projet :
+
+```bash
+npm run dev
+```
+
 ## Construction des exercices
 
 ### Exercice
