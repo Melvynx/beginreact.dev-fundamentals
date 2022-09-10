@@ -54,12 +54,9 @@ Donc fais attention à ne pas l'enlever !
 
 ## Guide des émojis :
 
-- 🦁 C'est **Lienx** le premier lynx dans un corps dans lion du monde ! Il te donneras
-  des indications claire que tu devras suivre.
-- 💡 C'est des tips et astuces qui te permettront d'avancer. C'est un peu les cheatcode
-  qui te donne directement une partie de la réponse
-- 💌 Elle t'informe pour chaque exercise ce que tu as appris. Ce n'est pas que dans
-  l'exercise que tu apprends mais aussi dans la vidéo correction associé.
-- ⚠️ ...
-- 📖 ...
-- ℹ️ ...
+- 🦁 C'est Lienx le premier lynx dans un corps de lion du monde ! Il te donnera des indications claires que tu devras suivre.
+- 💡 C'est des tips et astuces qui te permettront d'avancer. C'est un peu les cheat-code qui te donnent directement une partie de la réponse
+- 💌 Elle t'informe pour chaque exercice ce que tu as appris. Ce n'est pas que dans l'exercice que tu apprends mais aussi dans la vidéo correction associée.
+- ⚠️ Information importante à lire avant de faire l'exercice
+- 📖 Lien vers la documentation officielle
+- ℹ️ Petite information qui te permettent de comprendre le code
