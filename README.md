@@ -16,6 +16,14 @@ sans React.
 - [npm](https://nodejs.org/en/) - v6 ou plus
 - [vscode](https://code.visualstudio.com/) - (ou un autre IDE)
 
+Tester : 
+
+```bash
+git -v
+node -v
+npm -v
+```
+
 ## Setup du projet
 
 ```bash
