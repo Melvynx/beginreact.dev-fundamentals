@@ -3,6 +3,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "formulahendry.auto-rename-tag",
-    "sburg.vscode-javascript-booster"
+    "sburg.vscode-javascript-booster",
+    "naumovs.color-highlight"
   ]
 }
