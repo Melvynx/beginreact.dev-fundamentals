@@ -4,6 +4,7 @@
     "esbenp.prettier-vscode",
     "formulahendry.auto-rename-tag",
     "sburg.vscode-javascript-booster",
-    "naumovs.color-highlight"
+    "naumovs.color-highlight",
+    "pkief.material-icon-theme"
   ]
 }
