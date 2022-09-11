@@ -83,7 +83,25 @@ Tu peux rajouter dans éléments la props "author" et ajouter un nouveau message
 
 💌 Tu apprends l'utilisation des props.
 
-## Extra 5 - Compiler babel
+## Extra 5 - Ajout de code JavaScript dans le JSX
+
+Le JSX c'est du JavaScript comme on l’a vue.
+
+Afin d'afficher des expressions JavaScript dans le JSX il faut utiliser
+les accolades (`{` `}`).
+
+Le grand avantage de React c'est que tu peux écrire du JavaScript directement
+dans le JSX.
+
+Pour te le prouver, tu as 3 missions :
+
+Dans `elements` rajoute à la suite de nos `Messages` 3 éléments :
+
+1. Un `h2` qui affiche `Math.random()`.
+2. Un `p` qui affiche l'addition entre `112 + 4`.
+3. Un `span` qui affiche la date du jours (💡 `new Date().toDateString()`).
+
+## Extra 6 - Compiler babel
 
 Maintenant, utilise le [compiler babel](https://babeljs.io/repl/) pour récupérer
 le code sans JSX de l'exercice précédent.
