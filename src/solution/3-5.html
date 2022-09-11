@@ -20,41 +20,26 @@
 
   <script type="text/babel">
     const Message = ({ children, author }) => {
-      return /*#__PURE__*/ React.createElement(
-        "p",
-        null,
-        /*#__PURE__*/ React.createElement("b", null, author),
-        " : ",
-        children
+      return (
+        <p>
+          <b>{author}</b> : {children}
+        </p>
       );
     };
 
-    const button = /*#__PURE__*/ React.createElement(
-      "button",
-      {
-        id: "start",
-      },
-      "Start"
+    const button = <button id="start">Start</button>;
+
+    const elements = (
+      <div>
+        {button}
+        <Message author="Bill">Hello</Message>
+        <Message author="Melvynx">Coucou !</Message>
+        <h2>{Math.random()}</h2>
+        <p>{112 + 4}</p>
+        <span>{new Date().toDateString()}</span>
+      </div>
     );
-    const elements = /*#__PURE__*/ React.createElement(
-      "div",
-      null,
-      button,
-      /*#__PURE__*/ React.createElement(
-        Message,
-        {
-          author: "Bill",
-        },
-        "Hello"
-      ),
-      /*#__PURE__*/ React.createElement(
-        Message,
-        {
-          author: "Melvynx",
-        },
-        "Coucou !"
-      )
-    );
+
     const root = ReactDOM.createRoot(document.querySelector("#root"));
     root.render(elements);
   </script>

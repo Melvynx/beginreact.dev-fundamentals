@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head}}
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script type="text/babel">
+    const Message = ({ children, author }) => {
+      return React.createElement(
+        "p",
+        null,
+        React.createElement("b", null, author),
+        " : ",
+        children
+      );
+    };
+
+    const button = React.createElement(
+      "button",
+      {
+        id: "start",
+      },
+      "Start"
+    );
+    const elements = React.createElement(
+      "div",
+      null,
+      button,
+      React.createElement(
+        Message,
+        {
+          author: "Bill",
+        },
+        "Hello"
+      ),
+      React.createElement(
+        Message,
+        {
+          author: "Melvynx",
+        },
+        "Coucou !"
+      ),
+      React.createElement("h2", null, Math.random()),
+      React.createElement("p", null, 112 + 4),
+      React.createElement("span", null, new Date().toDateString())
+    );
+
+    const root = ReactDOM.createRoot(document.querySelector("#root"));
+    root.render(elements);
+  </script>
+</html>
