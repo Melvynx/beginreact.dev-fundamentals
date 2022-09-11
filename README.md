@@ -16,7 +16,7 @@ sans React.
 - [npm](https://nodejs.org/en/) - v6 ou plus
 - [vscode](https://code.visualstudio.com/) - (ou un autre IDE)
 
-Tester : 
+Tester :
 
 ```bash
 git -v
@@ -52,7 +52,7 @@ Dans chacun de ses exercises tu trouveras les fichiers suivants :
 fichier `md` et faire `CMD + SHIFT + P` puis chercher "Open Markdown" et sélectionner le
 "Markdown : Open preview to the side" !
 
-Dans les fichiers Exercise il y a plusieurs "Extra". Le premier exercise est l'exercise
+Dans les fichiers `Exercise.md` il y a plusieurs "Extra". Le premier exercise est l'exercise
 principal, dans le fichier `Exercise.html` tu trouveras de l'aide pour le réalisé avec les émojis.
 
 Ensuite, il y a 1 à 6 autres exercises que tu vas réaliser seul.

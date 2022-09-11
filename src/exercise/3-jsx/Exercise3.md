@@ -83,7 +83,7 @@ Tu peux rajouter dans éléments la props "author" et ajouter un nouveau message
 
 💌 Tu apprends l'utilisation des props.
 
-## Extra 5 - Ajout de code JavaScript dans le JSX
+## Extra 5 - Ajout de code JavaScript dans le JSX
 
 Le JSX c'est du JavaScript comme on l’a vue.
 
