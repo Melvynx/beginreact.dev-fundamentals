@@ -41,7 +41,7 @@ Voici le début du code pour t'aider :
 
 ```js
 const Counter = (initialValue) => {
-  const button = ""; // 🦁 remplace "" par la création d'un bouton
+  const button = ''; // 🦁 remplace "" par la création d'un bouton
   // 🦁 Ajout du text
   // 🦁 Ajout de l'event
   return button;
@@ -62,8 +62,8 @@ Regarde-le résultat de la solution 3 et essaie de cliquer sur la div.
 Voici un tableau de fruits :
 
 ```js
-const fruits = ["banana", "apple", "strawberry"];
+const fruits = ['banana', 'apple', 'strawberry'];
 ```
 
-Sous nous boutons, ajoute une liste (`ul`) avec chaqun de
+Sous nous boutons, ajoute une liste (`ul`) avec chacun de
 nos fruits (`li`) !
