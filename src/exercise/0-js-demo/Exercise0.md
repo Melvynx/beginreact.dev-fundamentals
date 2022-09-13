@@ -38,7 +38,7 @@ exercises/
 
 💡 Il n'y a plus d'émoji pour t'aider pour les Extra, tu es livré à toi-même.
 
-## Extra 2
+## Extra 3
 
 Si l'utilisateur ne met pas de valeur, on a une erreur. Rajoute
 des `alertes` pour prévenir l'utilisateur.
