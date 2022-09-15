@@ -14,7 +14,7 @@ afin de comprendre comment la formation est produite.**
 Dans cette exercice le but est d'afficher dans la `div` `result` le résultat de l'air d'un triangle qui fait 5 de base et 10 de hauteur.
 
 💡 Pour l'exercice principal de chaque grand exercice, il y a des 🦁 dans le fichier
-[Exercise.html](/src/exercise/0-js-refresh/Exercise.html) !
+[Exercise.html](/src/exercise/0-js-demo/Exercise.html) !
 
 💡 Les noms des fichiers et des dossiers sont toujours en anglais.
 
