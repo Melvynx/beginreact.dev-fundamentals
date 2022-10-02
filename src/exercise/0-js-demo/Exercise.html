@@ -4,7 +4,12 @@
     {{> head}}
   </head>
   <body>
-    <div id="result"></div>
+    <div>
+      <input type="text" id="base" />
+      <input type="text" id="height" />
+      <button onclick="calculate()">Submit</button>
+      <div id="result"></div>
+    </div>
   </body>
 
   <script>
@@ -13,12 +18,19 @@
 
   <script>
     const triangleAir = (base, height) => {
-      // 🦁 Return l'air d'un triangle est égal à la (base * hauteur) / 2
+      return (base * height) / 2;
     };
 
-    // 🦁 Affiche le résultat de l'air d'un triangle qui fait 5 de base et 10 de hauteur
-    // 💡 result.innerText = ...
-  </script>
+    const calculate = () => {
+      const base = Number(document.querySelector("#base").value);
+      const height = Number(document.querySelector("#height").value);
 
-  <script src="/core/core.js"></script>
+      if (!base || !height) {
+        alert("Input is not filled");
+        return;
+      }
+
+      result.innerText = triangleAir(base, height);
+    };
+  </script>
 </html>

@@ -3,8 +3,8 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "formulahendry.auto-rename-tag",
-    "sburg.vscode-javascript-booster",
     "naumovs.color-highlight",
-    "pkief.material-icon-theme"
+    "pkief.material-icon-theme",
+    "usernamehw.errorlens"
   ]
 }

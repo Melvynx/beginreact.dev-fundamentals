@@ -21,7 +21,7 @@ Les props sont l'équivalent des propriétés de l'HTML et le children c'est ce 
 
 // =
 
-React.createElement("div", { id: "test" }, "Hey");
+React.createElement('div', { id: 'test' }, 'Hey');
 ```
 
 ⚠️Il n'y a pas de JSX. Pour que tu puisses totalement comprendre
@@ -31,7 +31,7 @@ le JSX on va faire sans, et tu vas découvrir le bonheur quand tu seras avec.
 normal si c'est un peu lent surtout si tu n'as pas beaucoup de connexion. Tu as
 besoin d'une connexion internet pour faire cette exercise.
 
-## Exercice
+## Exercice - Simple bouton
 
 On vas simplement crée un bouton "Start" qui lors du click affiche une `alert`
 avec le text "Le bouton start à été cliqué !".
@@ -43,9 +43,9 @@ Tu peux aller voir cette documentation pour réaliser l'exercice. [📖 createEl
 Voici un exemple de React CreateElement :
 
 ```js
-const props = { id: "test" };
-const elementType = "h1";
-const children = "Hey";
+const elementType = 'h1';
+const props = { id: 'test' };
+const children = 'Hey';
 
 const element = React.createElement(elementType, props, children);
 ```
@@ -83,7 +83,7 @@ Les listes en React sont incontournables.
 J'ai envie d'afficher un élément en fonction d'un tableau `fruits` :
 
 ```js
-const fruits = ["pomme", "poire", "fraise", "cerise"];
+const fruits = ['pomme', 'poire', 'fraise', 'cerise'];
 ```
 
 Notre nouveau HTML ressemble à :
@@ -119,11 +119,11 @@ on a deux moyens d'afficher ses enfants avec `React.createElement` :
 
 ```js
 React.createElement(
-  "div",
+  'div',
   null,
-  React.createElement("p", null, "I'm an children"),
-  React.createElement("span", null, "I'm an children"),
-  React.createElement("button", null, "I'm an children")
+  React.createElement('p', null, "I'm an children"),
+  React.createElement('span', null, "I'm an children"),
+  React.createElement('button', null, "I'm an children")
 );
 ```
 
@@ -133,11 +133,11 @@ Mais `createElement` acceptent aussi des **tableaux** !
 
 ```js
 const childrens = [
-  React.createElement("p", null, "I'm an children"),
-  React.createElement("span", null, "I'm an children"),
-  React.createElement("button", null, "I'm an children"),
+  React.createElement('p', null, "I'm an children"),
+  React.createElement('span', null, "I'm an children"),
+  React.createElement('button', null, "I'm an children"),
 ];
-React.createElement("div", null, childrens);
+React.createElement('div', null, childrens);
 ```
 
 **N'oublie jamais ça** !

@@ -23,33 +23,12 @@
     "**/.build": true,
     "**/.gh-pages": true
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "eslint.options": {
-    "env": {
-      "browser": true,
-      "es6": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 2019,
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "jsx": true
-      }
-    },
-    "rules": {
-      "no-debugger": "off"
-    }
-  },
-  "workbench.iconTheme": "material-icon-theme",
   "npm.runSilent": true,
   "explorer.confirmDragAndDrop": false,
   "editor.formatOnPaste": false,
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": false,
   "editor.smoothScrolling": true,
-  "php.suggest.basic": false
+  "explorer.confirmDelete": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula"
 }

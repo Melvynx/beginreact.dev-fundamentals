@@ -15,7 +15,7 @@ const element = React.createElement("div", { id: "test" }, "Hey");
 
 ⚠️ J'ai ajouté un nouveau script "Babel" et j'ai changé le type du fichier.
 
-## Exercice
+## Exercice : Bouton JSX
 
 Donc on va refaire ce qu'on a fait dans l'exercice 1.1 mais avec JSX.
 Les indications sont dans le fichier de l'exercice.
