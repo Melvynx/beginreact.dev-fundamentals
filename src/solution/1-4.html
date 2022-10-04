@@ -8,18 +8,18 @@
   </body>
 
   <script>
-    const helloDiv = document.createElement("div");
+    const helloDiv = document.createElement('div');
 
-    helloDiv.innerText = "Hello 👋";
+    helloDiv.innerText = 'Hello 👋';
 
     const helloDivOnClick = () => {
-      alert("Tu as cliqué sur Hello !");
+      alert('Tu as cliqué sur Hello !');
     };
 
-    helloDiv.addEventListener("click", helloDivOnClick);
+    helloDiv.addEventListener('click', helloDivOnClick);
 
     const Counter = (initialValue) => {
-      const button = document.createElement("button");
+      const button = document.createElement('button');
       button.innerText = Number(initialValue) || 0;
 
       const onClick = () => {
@@ -27,23 +27,23 @@
         button.innerText = previousValue + 1;
       };
 
-      button.addEventListener("click", onClick);
+      button.addEventListener('click', onClick);
       return button;
     };
 
-    const fruitsListUl = document.createElement("ul");
-    const fruits = ["banana", "apple", "strawberry", "test"];
+    const fruitsListUl = document.createElement('ul');
+    const fruits = ['banana', 'apple', 'strawberry', 'test'];
     for (const fruit of fruits) {
-      const fruitLi = document.createElement("li");
+      const fruitLi = document.createElement('li');
       fruitLi.innerText = fruit;
       fruitsListUl.appendChild(fruitLi);
     }
 
-    const root = document.querySelector("#root");
+    const root = document.querySelector('#root');
 
     root.appendChild(helloDiv);
     root.appendChild(Counter());
-    root.appendChild(Counter("some string"));
+    root.appendChild(Counter('some string'));
     root.appendChild(Counter(10));
     root.appendChild(fruitsListUl);
   </script>

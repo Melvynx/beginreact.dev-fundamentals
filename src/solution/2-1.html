@@ -18,19 +18,19 @@
 
   <script>
     const startButton = React.createElement(
-      "button",
+      'button',
       {
-        id: "start",
+        id: 'start',
         onClick: () => {
-          alert("Le bouton start à été cliqué !");
+          alert('Le bouton start à été cliqué !');
         },
       },
-      "Start"
+      'Start'
     );
 
-    const element = React.createElement("div", null, startButton);
+    const element = React.createElement('div', null, startButton);
 
-    const container = document.querySelector("#root");
+    const container = document.querySelector('#root');
     const root = ReactDOM.createRoot(container);
     root.render(element);
   </script>

@@ -18,26 +18,30 @@
     <div id="root"></div>
   </body>
 
-  <!-- 💡 permet de faire comprendre a Babel qu'il doit compiler ce fichier -->
   <script type="text/babel">
-    // 🦁 Remplace tout ceci par du JSX !
-    // 💡 <button id=...
     const startButton = React.createElement(
-      "button",
+      'button',
       {
-        id: "start",
+        id: 'start',
         onClick: () => {
-          alert("Le bouton start à été cliqué !");
+          alert('Le bouton start à été cliqué !');
         },
       },
-      "Start"
+      'Start'
     );
 
-    // 🦁 Remplace tout ceci par du JSX !
-    // 💡 <div><Counter />...
-    const element = React.createElement("div", null, startButton);
+    const Message = () => {
+      return React.createElement('p', null, "I'm a message");
+    };
 
-    const root = ReactDOM.createRoot(document.querySelector("#root"));
+    const element = React.createElement(
+      'div',
+      null,
+      startButton,
+      /*#__PURE__*/ React.createElement(Message, null)
+    );
+
+    const root = ReactDOM.createRoot(document.querySelector('#root'));
     root.render(element);
   </script>
 </html>

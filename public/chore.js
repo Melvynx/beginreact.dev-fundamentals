@@ -1,10 +1,10 @@
 const backButton = () => {
-  const button = document.createElement("button");
-  button.innerText = "Back";
-  button.style.position = "absolute";
-  button.style.top = "4px";
-  button.style.left = "4px";
-  button.addEventListener("click", () => {
+  const button = document.createElement('button');
+  button.innerText = 'Back';
+  button.style.position = 'absolute';
+  button.style.top = '4px';
+  button.style.left = '4px';
+  button.addEventListener('click', () => {
     window.history.back();
   });
 
@@ -12,7 +12,7 @@ const backButton = () => {
 };
 
 window.onload = () => {
-  if (location.pathname === "/") {
+  if (location.pathname === '/') {
     return;
   }
   document.body.appendChild(backButton());

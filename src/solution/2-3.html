@@ -17,32 +17,32 @@
   </body>
 
   <script>
-    const fruits = ["pomme", "poire", "fraise", "cerise"];
+    const fruits = ['pomme', 'poire', 'fraise', 'cerise'];
 
     const fruitsItems = fruits.map((fruit) => {
-      return React.createElement("li", null, fruit);
+      return React.createElement('li', null, fruit);
     });
 
-    const fruitsList = React.createElement("ul", null, fruitsItems);
+    const fruitsList = React.createElement('ul', null, fruitsItems);
 
-    const startButton = React.createElement("button", { id: "start" }, "Start");
+    const startButton = React.createElement('button', { id: 'start' }, 'Start');
 
     const buttonContainer = React.createElement(
-      "div",
+      'div',
       null,
       startButton,
-      React.createElement("button", null, "Stop")
+      React.createElement('button', null, 'Stop')
     );
 
     const element = React.createElement(
-      "div",
+      'div',
       null,
-      React.createElement("h1"),
+      React.createElement('h1', null, 'Lance la partie !'),
       buttonContainer,
       fruitsList
     );
 
-    const container = document.querySelector("#root");
+    const container = document.querySelector('#root');
     const root = ReactDOM.createRoot(container);
     root.render(element);
   </script>
