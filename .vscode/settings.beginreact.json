@@ -26,9 +26,13 @@
   "npm.runSilent": true,
   "explorer.confirmDragAndDrop": false,
   "editor.formatOnPaste": false,
+  "files.autoSave": "onFocusChange",
   "editor.cursorSmoothCaretAnimation": false,
   "editor.smoothScrolling": true,
   "explorer.confirmDelete": false,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dracula"
+  "workbench.colorTheme": "Dracula",
+  "window.zoomLevel": 1,
+  "git.autofetch": true,
+  "editor.tabSize": 2
 }
