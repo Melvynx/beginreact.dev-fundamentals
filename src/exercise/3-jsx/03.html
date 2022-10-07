@@ -18,7 +18,10 @@
     <div id="root"></div>
   </body>
 
+  <!-- 💡 permet de faire comprendre a Babel qu'il doit compiler ce fichier -->
   <script type="text/babel">
+    // 🦁 Remplace tout ceci par du JSX !
+    // 💡 <button id=...
     const startButton = React.createElement(
       'button',
       {
@@ -30,16 +33,9 @@
       'Start'
     );
 
-    const Message = () => {
-      return React.createElement('p', null, "I'm a message");
-    };
-
-    const element = React.createElement(
-      'div',
-      null,
-      startButton,
-      /*#__PURE__*/ React.createElement(Message, null)
-    );
+    // 🦁 Remplace tout ceci par du JSX !
+    // 💡 <div><Counter />...
+    const element = React.createElement('div', null, startButton);
 
     const root = ReactDOM.createRoot(document.querySelector('#root'));
     root.render(element);
