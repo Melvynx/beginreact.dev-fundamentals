@@ -30,7 +30,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  */ :root {
+  :root {
     --bg-color: #ffffff;
     --color: #232323;
     --primary: #747bff;

@@ -17,7 +17,15 @@
   </body>
 
   <script>
-    const startButton = React.createElement('button', null, 'Start');
+    const startButton = React.createElement(
+      'button',
+      {
+        onClick: () => {
+          alert('Le bouton start à été cliqué !');
+        },
+      },
+      'Start'
+    );
 
     const element = React.createElement('div', null, startButton);
 
