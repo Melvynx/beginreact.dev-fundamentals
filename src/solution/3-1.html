@@ -19,7 +19,16 @@
   </body>
 
   <script type="text/babel">
-    const startButton = <p>
+    const startButton = (
+      <button
+        id="start-button"
+        onClick={() => {
+          alert('Le bouton start à été cliqué !');
+        }}
+      >
+        Start
+      </button>
+    );
 
     const elements = <div>{startButton}</div>;
 
