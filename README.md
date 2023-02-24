@@ -81,7 +81,7 @@ l'HTML / CSS / JS basique.
 
 Il y a un seul plugin qui permet "d'injecter" du HTML dans d'autre fichier HTML.
 J'utilise ce plugin dans les fichiers exercise à l'intérieur du `<Head>` afin
-d'avoir tout le contenu de [src/core/partials/head.hbs](src/core/partials/head.hbs)
+d'avoir tout le contenu de [src/chore/partials/head.hbs](src/chore/partials/head.hbs)
 dans le fichier, ce qui évite d'avoir du contenu superflu dans tes fichiers d'exercice.
 
 Pour l'utiliser, par exemple dans le fichier [src/exercise/1-no-react/Exercise.html](src/exercise/1-no-react/Exercise.html)
