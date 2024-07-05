@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head}}
+  </head>
+  <body>
+    <div>
+      <input type="text" id="base" />
+      <input type="text" id="height" />
+      <button onclick="calculate()">Submit</button>
+      <div id="result"></div>
+    </div>
+  </body>
+
+  <script>
+    const result = document.querySelector('#result');
+  </script>
+
+  <script>
+    const triangleAir = (base, height) => (base * height) / 2;
+
+    const calculate = () => {
+      const height = Number(document.querySelector('#height').value);
+      const base = Number(document.querySelector('#base').value);
+
+      console.log({ height, base });
+
+      if (height && base) {
+        console.log('error');
+      }
+
+      const result = triangleAir(base, height);
+
+      document.querySelector('#result').innerText = result;
+    };
+  </script>
+</html>

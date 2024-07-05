@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> head}}
+  </head>
+  <body>
+    {{> header-bar }}
+
+    <div>
+      <button onclick="calculate()">Submit</button>
+      <div id="result"></div>
+    </div>
+  </body>
+
+  <script>
+    const result = document.querySelector('#result');
+  </script>
+
+  <script>
+    const triangleAir = (base, height) => (base * height) / 2;
+
+    const calculate = () => {
+      const result = triangleAir(5, 10);
+
+      document.querySelector('#result').innerText = result;
+    };
+  </script>
+</html>

@@ -1,27 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    {{> head }}
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/react.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div class="navigation-page">
-      <h1 class="work-sans">Module 1 - Les bases</h1>
+  {{> header}}
+  <body class="">
+    <div class="container flex flex-col gap-4">
+      <h1 class="text-xl font-bold text-center">Module 1 - Fundamentals</h1>
       <p>
-        Les liens te permettent de te repérer dans les exercices.
-        <br />
-        Si tu es perdu ou tu rencontres des difficultés, rejoins le discord et
-        n'hésite pas à demander de l'aide.
+        Les liens suivantes te permettent de naviguer dans les exercices qu'on
+        va faire ensemble.
       </p>
-      <div class="nav-list">
-        <a href="./src/chore/router/0-js-demo.html">Exercice 0</a>
-        <a href="./src/chore/router/1-no-react.html">Exercice 1</a>
-        <a href="./src/chore/router/2-simple-react.html">Exercice 2</a>
-        <a href="./src/chore/router/3-jsx.html">Exercice 3</a>
+      <p>Problème ? Rejoins le discord.</p>
+      <div class="flex flex-col gap-2 text-center text-primary">
+        <a class="btn btn-secondary btn-lg" href="./src/router/0.html"
+          >Exercice 0</a
+        >
+        <a class="btn btn-secondary btn-lg" href="./src/router/1.html"
+          >Exercice 1</a
+        >
+        <a class="btn btn-secondary btn-lg" href="./src/router/2.html"
+          >Exercice 2</a
+        >
+        <a class="btn btn-secondary btn-lg" href="./src/router/3.html"
+          >Exercice 3</a
+        >
       </div>
     </div>
   </body>
