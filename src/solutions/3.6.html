@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     {{> head}}
@@ -15,20 +15,35 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    {{> header-bar }}
+
+    <div id="root" class="container"></div>
   </body>
 
   <script type="text/babel">
-    const Message = ({ children, author }) => {
+    const Card = ({ children, image }) => {
       return React.createElement(
-        'p',
-        null,
-        React.createElement('b', null, author),
-        ' : ',
-        children
+        'div',
+        {
+          className: 'card bg-base-300 w-96 shadow-xl',
+        },
+        React.createElement(
+          'figure',
+          null,
+          React.createElement('img', {
+            src: image,
+            alt: 'Shoes',
+          })
+        ),
+        React.createElement(
+          'div',
+          {
+            className: 'card-body',
+          },
+          children
+        )
       );
     };
-
     const button = React.createElement(
       'button',
       {
@@ -36,30 +51,42 @@
       },
       'Start'
     );
-
     const elements = React.createElement(
       'div',
       null,
       button,
       React.createElement(
-        Message,
+        Card,
         {
-          author: 'Bill',
+          image:
+            'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
         },
-        'Hello'
+        React.createElement(
+          'h2',
+          {
+            className: 'card-title',
+          },
+          'Shoes'
+        )
       ),
       React.createElement(
-        Message,
+        Card,
         {
-          author: 'Melvynx',
+          image:
+            'https://sharkpix.com/images/uploads/happy-great-white-shark.jpg',
         },
-        'Coucou !'
+        React.createElement(
+          'h2',
+          {
+            className: 'card-title',
+          },
+          'Shark'
+        )
       ),
       React.createElement('h2', null, Math.random()),
       React.createElement('p', null, 112 + 4),
       React.createElement('span', null, new Date().toDateString())
     );
-
     const root = ReactDOM.createRoot(document.querySelector('#root'));
     root.render(elements);
   </script>
