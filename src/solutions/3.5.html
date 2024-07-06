@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     {{> head}}
@@ -15,15 +15,20 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    {{> header-bar }}
+
+    <div id="root" class="container"></div>
   </body>
 
   <script type="text/babel">
-    const Message = ({ children, author }) => {
+    const Card = ({ children, image }) => {
       return (
-        <p>
-          <b>{author}</b> : {children}
-        </p>
+        <div className="card bg-base-300 w-96 shadow-xl">
+          <figure>
+            <img src={image} alt="Shoes" />
+          </figure>
+          <div className="card-body">{children}</div>
+        </div>
       );
     };
 
@@ -32,8 +37,12 @@
     const elements = (
       <div>
         {button}
-        <Message author="Bill">Hello</Message>
-        <Message author="Melvynx">Coucou !</Message>
+        <Card image="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg">
+          <h2 className="card-title">Shoes</h2>
+        </Card>
+        <Card image="https://sharkpix.com/images/uploads/happy-great-white-shark.jpg">
+          <h2 className="card-title">Shark</h2>
+        </Card>
         <h2>{Math.random()}</h2>
         <p>{112 + 4}</p>
         <span>{new Date().toDateString()}</span>

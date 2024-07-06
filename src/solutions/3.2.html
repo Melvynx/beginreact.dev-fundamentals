@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     {{> head}}
@@ -15,12 +15,26 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    {{> header-bar }}
+
+    <div id="root" class="container"></div>
   </body>
 
   <script type="text/babel">
-    const Message = () => {
-      return <p>I'm a message</p>;
+    const Card = () => {
+      return (
+        <div className="card bg-base-300 w-96 shadow-xl">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+              alt="Shoes"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Shoes!</h2>
+          </div>
+        </div>
+      );
     };
 
     const button = <button id="start">Start</button>;
@@ -28,7 +42,7 @@
     const elements = (
       <div>
         {button}
-        <Message />
+        <Card />
       </div>
     );
 
