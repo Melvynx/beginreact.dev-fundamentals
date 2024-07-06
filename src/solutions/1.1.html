@@ -1,17 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     {{> head}}
   </head>
   <body>
-    <div id="root"></div>
+    {{> header-bar }}
+
+    <div id="root" class="container"></div>
   </body>
 
   <script>
-    const helloDiv = document.createElement('div');
-    helloDiv.innerText = 'Hello 👋';
+    const button = document.createElement('button');
+    button.classList.add('btn', 'btn-primary');
+    button.innerText = 'Hello 👋';
 
     const root = document.querySelector('#root');
-    root.appendChild(helloDiv);
+    root.appendChild(button);
   </script>
 </html>

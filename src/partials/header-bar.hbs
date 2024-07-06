@@ -4,6 +4,25 @@
   <img class='size-8' alt='BeginReact Logo' src='/beginreact.png' />
   <a href='/' class='font-bold text-neutral-content'>BeginReact</a>
   <div class='flex-1'></div>
+  <button class='btn' onclick='my_modal_2.showModal()'>Menu</button>
+  <dialog id='my_modal_2' class='modal'>
+    <div class='modal-box max-w-xl'>
+      <h3 class='text-lg font-bold'>Exercices</h3>
+      <p class='py-4'>
+        Trouve les différentes exercices et solutions ici.
+      </p>
+      {{> exercices }}
+      <div class='modal-action'>
+        <form method='dialog'>
+          <!-- if there is a button in form, it will close the modal -->
+          <button class='btn'>Close</button>
+        </form>
+      </div>
+    </div>
+    <form method='dialog' class='modal-backdrop'>
+      <button>close</button>
+    </form>
+  </dialog>
   <label
     class='btn btn-ghost swap swap-rotate btn-sm size-9 !text-neutral-content'
   >

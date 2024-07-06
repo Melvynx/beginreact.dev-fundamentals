@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     {{> head}}
@@ -15,22 +15,24 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    {{> header-bar }}
+
+    <div id="root" class="container"></div>
   </body>
 
   <script type="text/babel">
-    const startButton = (
+    const helloButton = (
       <button
-        id="start-button"
+        className="btn btn-primary"
         onClick={() => {
-          alert('Le bouton start à été cliqué !');
+          alert('Tu as cliqué sur Hello !');
         }}
       >
-        Start
+        Hello 👋
       </button>
     );
 
-    const elements = <div>{startButton}</div>;
+    const elements = <div>{helloButton}</div>;
 
     const root = ReactDOM.createRoot(document.querySelector('#root'));
     root.render(elements);

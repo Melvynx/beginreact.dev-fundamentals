@@ -7,34 +7,19 @@
     {{> header-bar }}
 
     <div class="flex flex-col gap-4 container">
-      <input class="input input-bordered" type="text" id="base" />
-      <input class="input input-bordered" type="text" id="height" />
       <button class="btn btn-primary" onclick="calculate()">Submit</button>
       <div id="result"></div>
     </div>
   </body>
 
   <script>
-    const result = document.querySelector('#result');
-  </script>
-
-  <script>
     const triangleAir = (base, height) => (base * height) / 2;
 
     const calculate = () => {
-      const height = Number(document.querySelector('#height').value);
-      const base = Number(document.querySelector('#base').value);
-
-      console.log({ height, base });
-
-      if (!height || !base) {
-        alert('Attention pas de valuer');
-        return;
-      }
-
-      const result = triangleAir(base, height);
-
-      document.querySelector('#result').innerText = result;
+      // 🦁 Vient calculer l'air pour un triangle de base 5 et de hauteur 10.
+      // 🦁 Affichez le résultat dans la div "result".
     };
   </script>
+
+  <script></script>
 </html>

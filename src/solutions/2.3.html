@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     {{> head}}
@@ -13,46 +13,78 @@
     ></script>
   </head>
   <body>
-    <div id="root"></div>
+    {{> header-bar }}
+
+    <div id="root" class="container"></div>
   </body>
 
   <script>
-    const fruits = ['pomme', 'poire', 'fraise', 'cerise'];
-
-    const fruitsItems = fruits.map((fruit) => {
-      return React.createElement('li', null, fruit);
-    });
-
-    const fruitsList = React.createElement('ul', null, fruitsItems);
-
-    const startButton = React.createElement(
+    const helloButton = React.createElement(
       'button',
       {
-        id: 'start',
+        id: 'Hello 👋',
+        className: 'btn btn-primary',
         onClick: () => {
-          alert('Le bouton start à été cliqué !');
+          alert('Tu as cliqué sur Hello !');
         },
       },
       'Start'
     );
 
-    const buttonContainer = React.createElement(
-      'div',
-      null,
-      startButton,
-      React.createElement('button', null, 'Stop')
+    const Card = () =>
+      React.createElement(
+        'div',
+        { className: 'card bg-base-100 w-96 shadow-xl' },
+        React.createElement(
+          'figure',
+          null,
+          React.createElement('img', {
+            src: 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
+            alt: 'Shoes',
+          })
+        ),
+        React.createElement(
+          'div',
+          { className: 'card-body' },
+          React.createElement('h2', { className: 'card-title' }, 'Shoes!'),
+          React.createElement(
+            'p',
+            null,
+            'If a dog chews shoes whose shoes does he choose?'
+          ),
+          React.createElement(
+            'div',
+            { className: 'card-actions justify-end' },
+            React.createElement(
+              'button',
+              { className: 'btn btn-primary' },
+              'Buy Now'
+            )
+          )
+        )
+      );
+
+    const fruits = ['banana', 'apple', 'strawberry', 'test'];
+    const fruitsList = React.createElement(
+      'ul',
+      {
+        className: 'list-disc list-inside',
+      },
+      fruits.map((fruit) => {
+        return React.createElement('li', null, fruit);
+      })
     );
 
-    const element = React.createElement(
+    const main = React.createElement(
       'div',
       null,
-      React.createElement('h1', null, 'Lance la partie !'),
-      buttonContainer,
+      helloButton,
+      React.createElement(Card),
       fruitsList
     );
 
     const container = document.querySelector('#root');
     const root = ReactDOM.createRoot(container);
-    root.render(element);
+    root.render(main);
   </script>
 </html>

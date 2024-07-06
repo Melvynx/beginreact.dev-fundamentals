@@ -16,17 +16,19 @@
   <body>
     {{> header-bar }}
 
-    <div id="root"></div>
+    <div id="root" class="container"></div>
   </body>
 
   <script>
-    // 🦁 Crée un button avec comme id "start" et comme text à l'intérieur "Start !"
+    // 🦁 Crée un button avec le text "Hello 👋"
     // 🦁 Ajoute une événement "onClick" à notre button qui affiche une alert.
 
-    // 🦁 Crée une div : "elements" avec à l'intérieur le bouton.
+    // 🦁 Crée une div : "main" avec à l'intérieur le bouton.
+    // 💡 On utilise un div `main` car la méthode `render` accepte qu'un seul élément
+    // 💡 On va donc utiliser cette div pour render tous nos éléments
 
     const container = document.querySelector('#root');
     const root = undefined; // 🦁 Remplace `undefined` by `ReactDOM.createRoot(container);`
-    // 🦁 Utilise `root.render` pour afficher la div "elements"
+    // 🦁 Utilise `root.render` pour afficher la div "main"
   </script>
 </html>
