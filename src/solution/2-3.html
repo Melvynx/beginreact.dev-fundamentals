@@ -19,9 +19,7 @@
   <script>
     const fruits = ['pomme', 'poire', 'fraise', 'cerise'];
 
-    const fruitsItems = fruits.map((fruit) => {
-      return React.createElement('li', null, fruit);
-    });
+    const fruitsItems =   fruits.map((fruit) => React.createElement('li', { key: fruit }, fruit));
 
     const fruitsList = React.createElement('ul', null, fruitsItems);
 
